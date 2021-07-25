@@ -13,7 +13,6 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    //вызываается когда запускается home экран
     super.initState();
 
     bookList.addAll([
