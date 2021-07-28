@@ -28,19 +28,19 @@ class _HomeState extends State<Home> {
         title: Text('Список книг'),
         centerTitle: true,
       ),
+
       body: ListView.builder(
-          //класс в формате списка
           itemCount: bookList.length,
           itemBuilder: (BuildContext context, int index) {
-            return createListItem(index);
+            return createListItem(index); //вынес все в строку 87 для удобств ок
           }),
+
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.red,
           onPressed: () {
             showDialog(
                 context: context,
                 builder: (BuildContext context) {
-                  //всплыв окно добавления
                   return AlertDialog(
                     title: Text('Введите данные книги'),
                     content: Column(
@@ -86,7 +86,6 @@ class _HomeState extends State<Home> {
   }
 
   Widget createListItem(int index) => Dismissible(
-        //возврат каждого элемента в списке
         key: Key(bookList[index]),
         child: Card(
           child: ListTile(
@@ -107,4 +106,9 @@ class _HomeState extends State<Home> {
           });
         },
       );
+/*
+*   Widget createActionButton(int index) => AlertDialog(
+*
+
+* */
 }
