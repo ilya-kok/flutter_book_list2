@@ -84,7 +84,6 @@ class _HomeState extends State<Home> {
           )),
     );
   }
-
   Widget createListItem(int index) => Dismissible(
         key: Key(bookList[index]),
         child: Card(
@@ -112,3 +111,5 @@ class _HomeState extends State<Home> {
 
 * */
 }
+
+//с этого момента я начну нормально комитеть 2
