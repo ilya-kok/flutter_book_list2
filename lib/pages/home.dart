@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
           )),
     );
   }
-
+//читай стоку 35
   Widget createListItem(int index) => Dismissible(
         key: Key(bookList[index]),
         child: Card(
